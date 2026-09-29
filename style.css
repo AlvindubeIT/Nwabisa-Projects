@@ -1,0 +1,188 @@
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fdfdfd;
+  color: #333333;
+}
+
+/* Hero Section */
+#hero {
+  background: url('images/hero.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.cta-button {
+  background: #e67e22;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  list-style: none;
+  background: #34495e;
+  margin: 0;
+  padding: 10px;
+}
+
+nav ul li {
+  margin: 5px 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sections */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #2c3e50;
+}
+
+/* Gallery */
+#gallery img {
+  width: 45%;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+/* Contact Form */
+form {
+  margin-top: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background: #2c3e50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #e67e22;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #2c3e50;
+  color: #fff;
+  padding: 15px;
+}
+
+/* 📱 Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  #hero {
+    padding: 60px 15px;
+    font-size: 90%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #gallery img {
+    width: 90%; /* stack images vertically */
+  }
+
+  .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  #hero {
+    padding: 40px 10px;
+  }
+
+  #gallery img {
+    width: 100%;
+  }
+}
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 5px #999;
+  z-index: 100;
+}
+
+.whatsapp-float img {
+  width: 35px;
+  margin-top: 12px;
+}
+
+.whatsapp-float:hover {
+  background-color: #20b954;
+}
+/* Service Cards */
+section h3 { 
+     background: #f2f2f2;
+     padding: 20px;
+     margin: 20px 0 0;
+     border-radius: 10px 10px 0 0;
+     font-size: 22px;
+} 
+
+section h3 + p {
+     background: #f2f2f2;
+     padding: 0 20px 20px;
+     margin: 0 0 20px;
+     border-radius: 0 0 10px 10px;
+     line-height: 1.6;
+}     

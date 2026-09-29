@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nwabisa Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Meta details -->
+  <meta name="description" content="Nwabisa Projects offers professional painting services in Johannesburg. Interior, exterior, roof painting, and ceiling cones with quality finishes.">
+  <meta name="keywords" content="painting services, Johannesburg, interior painting, exterior painting, roof painting, ceiling cones">
+  <meta name="author" content="Alvin Dube">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Social media preview -->
+  <meta property="og:title" content="Nwabisa Projects - Professional Painting Services">
+  <meta property="og:description" content="Transform your home or business with clean, professional painting services.">
+  <meta property="og:image" content="images/project1.jpg">
+  <meta property="og:url" content="https://yourwebsite.com">
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Fade-out animation for thank-you message */
+    #thankYouMessage {
+      opacity: 1;
+      transition: opacity 1s ease-out;
+      color: green;
+      font-weight: bold;
+    }
+    #thankYouMessage.fade-out {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Professional Painting Services You Can Trust</h1>
+    <p>Transform your home or business with clean, professional painting and finishing services from Nwabisa Projects.</p>
+    <a href="#contact" class="cta-button">Get a Free Quote</a>
+  </section>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Services -->
+  <main>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <h3>Interior Painting</h3>
+        <p>Give your rooms a fresh, clean and modern look with professional interior painting.</p>
+        <h3>Exterior Painting</h3>
+        <p>Improve the appearance of your property with quality exterior painting.</p>
+        <h3>Roof Painting</h3>
+        <p>Refresh and enhance your roof with a professional roof painting service.</p>
+        <h3>Ceiling Cones</h3>
+        <p>Add a finished decorative touch to your ceilings with professionally painted ceiling cones.</p>
+      </ul>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p>Showcase of our recent projects.</p>
+      <img src="images/project1.jpg" alt="Roof painting">
+      <img src="images/project2.jpg" alt="Roof painting">
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Nwabisa Projects is a newly established painting company focused on providing reliable, neat, and professional painting services for homes and businesses. We specialise in interior painting, exterior painting, roof painting, and ceiling cones. We pay attention to detail and aim to give every project a clean, quality finish that improves the look and feel of your property. Whether you are refreshing a single room, giving your home's exterior a new look, or protecting and improving your roof, we are committed to providing professional service from preparation to completion.</p>
+      <strong>Nwabisa Projects - Quality finishes. Professional service.</strong>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:Alvindube91@gmail.com">Alvindube91@gmail.com</a></p>
+      <p>Phone: +27 74 712 8553</p>
+      <p>Location: Johannesburg, South Africa</p>
+
+      <!-- Request a Quote Form -->
+      <h3>Request a Quote</h3>
+      <form onsubmit="sendToWhatsApp(event)">
+        <label>Name:</label><br>
+        <input type="text" id="name" required><br>
+
+        <label>Service Needed:</label><br>
+        <input type="text" id="service" required><br>
+
+        <label>Message:</label><br>
+        <textarea id="message" required></textarea><br>
+
+        <input type="submit" value="Send via WhatsApp">
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Nwabisa Painting Services</p>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/27747128553" class="whatsapp-float" target="_blank">
+    <img src="images/whatsapp-icon.png" alt="WhatsApp" width="50" height="50">
+  </a>
+
+  <!-- WhatsApp Script -->
+  <script>
+  function sendToWhatsApp(event) {
+    event.preventDefault();
+    let name = document.getElementById("name").value;
+    let service = document.getElementById("service").value;
+    let message = document.getElementById("message").value;
+
+    let text = `Hello, my name is ${name}. I need help with: ${service}. Message: ${message}`;
+    
+    // WhatsApp number (South Africa code 27, no spaces)
+    let phone = "27747128553"; 
+    let url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+
+    // Open WhatsApp
+    window.open(url, "_blank");
+
+    // Show thank-you message
+    let thankYou = document.createElement("p");
+    thankYou.textContent = "✅ Thank you, " + name + "! Your request has been sent via WhatsApp.";
+    thankYou.id = "thankYouMessage";
+    document.getElementById("contact").appendChild(thankYou);
+
+    // Fade out after 4 seconds, then remove
+    setTimeout(() => {
+      thankYou.classList.add("fade-out");
+      setTimeout(() => {
+        thankYou.remove();
+      }, 1000); // matches CSS transition duration
+    }, 4000);
+  }
+  </script>
+</body>
+</html>
