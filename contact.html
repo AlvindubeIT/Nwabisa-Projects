@@ -1,0 +1,186 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Nwabisa Projects</title>
+
+    <meta name="description" content="Contact Nwabisa Projects in Johannesburg for professional painting services and a free quote.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1>Contact Nwabisa Projects</h1>
+
+        <p>
+            Get in touch with us for a free painting quote.
+        </p>
+    </header>
+
+
+    <main>
+
+        <!-- Contact Information -->
+        <section class="contact-page">
+
+            <h2>Let's Talk About Your Project</h2>
+
+            <p>
+                Whether you need interior painting, exterior painting,
+                roof painting or ceiling cones, we'd be happy to hear
+                from you.
+            </p>
+
+            <div class="contact-details">
+
+                <p>
+                    <strong>Email:</strong><br>
+                    <a href="mailto:Alvindube91@gmail.com">
+                        Alvindube91@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Phone / WhatsApp:</strong><br>
+                    <a href="https://wa.me/27747128553" target="_blank">
+                        +27 74 712 8553
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Location:</strong><br>
+                    Johannesburg, South Africa
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quote Form -->
+        <section class="quote-section">
+
+            <h2>Request a Free Quote</h2>
+
+            <p>
+                Fill in the form below and your request will be sent
+                directly to us through WhatsApp.
+            </p>
+
+            <form onsubmit="sendToWhatsApp(event)">
+
+                <label for="name">Your Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <label for="service">Service Needed</label>
+
+                <input
+                    type="text"
+                    id="service"
+                    placeholder="e.g. Exterior Painting"
+                    required
+                >
+
+
+                <label for="message">Tell Us About Your Project</label>
+
+                <textarea
+                    id="message"
+                    placeholder="Tell us what you need painted..."
+                    required
+                ></textarea>
+
+
+                <input
+                    type="submit"
+                    value="Send Request via WhatsApp"
+                >
+
+            </form>
+
+        </section>
+
+
+        <!-- WhatsApp CTA -->
+        <section class="service-cta">
+
+            <h2>Prefer WhatsApp?</h2>
+
+            <p>
+                You can contact us directly on WhatsApp.
+            </p>
+
+            <a
+                href="https://wa.me/27747128553"
+                target="_blank"
+                class="cta-button"
+            >
+                Chat on WhatsApp
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Nwabisa Projects. All rights reserved.</p>
+    </footer>
+
+
+    <!-- WhatsApp Script -->
+    <script>
+        function sendToWhatsApp(event) {
+
+            event.preventDefault();
+
+            let name = document.getElementById("name").value;
+            let service = document.getElementById("service").value;
+            let message = document.getElementById("message").value;
+
+            let text =
+                "Hello, my name is " + name +
+                ". I need help with: " + service +
+                ". Message: " + message;
+
+            let phone = "27747128553";
+
+            let url =
+                "https://wa.me/" +
+                phone +
+                "?text=" +
+                encodeURIComponent(text);
+
+            window.open(url, "_blank");
+        }
+    </script>
+
+</body>
+</html>
+```
