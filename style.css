@@ -700,3 +700,168 @@ footer p {
     }
 }
 ```
+```css
+/* ================================
+   BOOK PAGE
+================================ */
+
+.book-section {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 20px;
+    background: #f4f4f4;
+}
+
+.book-content {
+    max-width: 800px;
+    background: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.book-label {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.book-content h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.book-content h2 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.book-line {
+    width: 70px;
+    height: 3px;
+    background: #333;
+    margin: 0 auto 30px;
+}
+
+.book-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.book-buttons {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.book-button {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.book-button:hover {
+    background: #444;
+    transform: translateY(-2px);
+}
+
+.book-button.secondary {
+    background: #777;
+}
+
+.book-button.secondary:hover {
+    background: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #222;
+    color: white;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .book-section {
+        padding: 40px 15px;
+    }
+
+    .book-content {
+        padding: 30px 20px;
+    }
+
+    .book-content h1 {
+        font-size: 30px;
+    }
+
+    .book-content h2 {
+        font-size: 18px;
+    }
+
+    .book-content p {
+        font-size: 16px;
+    }
+
+    .book-buttons {
+        flex-direction: column;
+    }
+
+    .book-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+```
+```css
+/* ================================
+   BOOK PAGE CENTERING FIX
+================================ */
+
+body:has(.book-section) {
+    margin: 0;
+    padding: 0;
+}
+
+body:has(.book-section) .navbar {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body:has(.book-section) .book-section {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body:has(.book-section) .book-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+```
