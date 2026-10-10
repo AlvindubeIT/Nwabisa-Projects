@@ -737,3 +737,2096 @@ body:has(.book-section) .book-content {
     margin: 0 auto;
     box-sizing: border-box;
 }
+
+/* =====================================================
+MODERN NWABISA PROJECTS HOMEPAGE
+NAVY BLUE, WHITE AND ORANGE
+===================================================== */
+
+:root {
+--navy: #14283f;
+--navy-light: #203c59;
+--orange: #f28c28;
+--orange-dark: #dc7415;
+--white: #ffffff;
+--light-bg: #f5f7fa;
+--text-dark: #263445;
+--text-muted: #667085;
+}
+
+/* =====================================================
+MODERN NAVIGATION
+===================================================== */
+
+.modern-header {
+position: sticky;
+top: 0;
+z-index: 1000;
+width: 100%;
+background: var(--navy);
+padding: 0 6%;
+box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+}
+
+.modern-nav {
+max-width: 1400px;
+min-height: 88px;
+margin: 0 auto;
+padding: 15px 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 25px;
+background: transparent;
+position: relative;
+}
+
+.modern-nav .brand {
+display: flex;
+flex-direction: column;
+flex-shrink: 0;
+text-decoration: none;
+line-height: 1.1;
+}
+
+.brand-name {
+color: var(--white);
+font-size: 25px;
+font-weight: 800;
+letter-spacing: 2px;
+}
+
+.brand-subtitle {
+color: var(--orange);
+font-size: 12px;
+font-weight: bold;
+letter-spacing: 5px;
+margin-top: 5px;
+}
+
+.modern-nav .nav-links {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 24px;
+flex-wrap: wrap;
+list-style: none;
+margin: 0;
+padding: 0;
+background: transparent;
+}
+
+.modern-nav .nav-links li {
+margin: 0;
+padding: 0;
+}
+
+.modern-nav .nav-links a {
+display: inline-block;
+padding: 8px 0;
+color: #e8edf3;
+font-size: 14px;
+font-weight: 600;
+text-decoration: none;
+transition: color 0.25s ease;
+}
+
+.modern-nav .nav-links a:hover,
+.modern-nav .nav-links a.active {
+color: var(--orange);
+}
+
+.modern-nav .nav-quote {
+display: inline-block;
+flex-shrink: 0;
+padding: 13px 20px;
+border-radius: 5px;
+background: var(--orange);
+color: var(--navy);
+text-decoration: none;
+font-weight: bold;
+font-size: 14px;
+transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.modern-nav .nav-quote:hover {
+background: #ffad52;
+transform: translateY(-2px);
+}
+
+/* =====================================================
+MODERN HERO SECTION
+===================================================== */
+
+#hero.modern-hero {
+position: relative;
+isolation: isolate;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+min-height: 570px;
+padding: 85px 8%;
+overflow: hidden;
+text-align: left;
+color: var(--white);
+background-color: var(--navy);
+background-image:
+linear-gradient(
+90deg,
+rgba(20, 40, 63, 0.97) 0%,
+rgba(20, 40, 63, 0.88) 48%,
+rgba(20, 40, 63, 0.55) 100%
+),
+url("images/project1.jpg");
+background-size: cover;
+background-position: center;
+}
+
+.modern-hero .hero-content {
+position: relative;
+z-index: 1;
+width: 100%;
+max-width: 850px;
+margin: 0;
+}
+
+.modern-hero .hero-label,
+.section-label {
+display: inline-block;
+color: var(--orange);
+font-size: 12px;
+font-weight: 800;
+letter-spacing: 2.5px;
+line-height: 1.7;
+margin-bottom: 16px;
+}
+
+.modern-hero h1 {
+max-width: 800px;
+margin: 0 0 24px;
+color: var(--white);
+font-size: clamp(38px, 5vw, 65px);
+font-weight: 800;
+line-height: 1.12;
+letter-spacing: -1.5px;
+}
+
+.modern-hero h1 span {
+color: var(--orange);
+}
+
+.modern-hero p {
+max-width: 650px;
+margin: 0 0 30px;
+color: #e2e8f0;
+font-size: 18px;
+line-height: 1.8;
+}
+
+.modern-hero .hero-buttons {
+display: flex;
+align-items: center;
+gap: 15px;
+flex-wrap: wrap;
+}
+
+.modern-hero .cta-button,
+.modern-cta .cta-button {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 12px;
+padding: 16px 25px;
+border: 2px solid var(--orange);
+border-radius: 5px;
+background: var(--orange);
+color: var(--navy);
+font-size: 15px;
+font-weight: 800;
+text-decoration: none;
+transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.modern-hero .cta-button:hover,
+.modern-cta .cta-button:hover {
+background: #ffad52;
+border-color: #ffad52;
+transform: translateY(-3px);
+opacity: 1;
+}
+
+.modern-hero .secondary-button {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+padding: 16px 23px;
+border: 1px solid rgba(255, 255, 255, 0.65);
+border-radius: 5px;
+color: var(--white);
+font-size: 15px;
+font-weight: bold;
+text-decoration: none;
+transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.modern-hero .secondary-button:hover {
+background: rgba(255, 255, 255, 0.12);
+border-color: var(--white);
+}
+
+.modern-hero .hero-note {
+display: flex;
+align-items: center;
+gap: 12px;
+margin-top: 35px;
+color: #d9e1eb;
+font-size: 13px;
+line-height: 1.7;
+}
+
+.modern-hero .hero-note-line {
+display: inline-block;
+width: 35px;
+height: 3px;
+flex-shrink: 0;
+background: var(--orange);
+}
+
+/* =====================================================
+HOMEPAGE SECTION LAYOUT
+Override the older general section styles only
+for the new homepage sections.
+===================================================== */
+
+main > .intro-section,
+main > .modern-services,
+main > .modern-gallery,
+main > .modern-cta {
+width: 100%;
+max-width: none;
+margin: 0;
+padding: 85px 8%;
+border-radius: 0;
+box-shadow: none;
+}
+
+main > .intro-section {
+padding-top: 90px;
+padding-bottom: 75px;
+background: var(--white);
+text-align: center;
+}
+
+.intro-section .section-label {
+margin-bottom: 14px;
+}
+
+.intro-section h2 {
+margin: 0 auto 22px;
+color: var(--navy);
+font-size: clamp(30px, 4vw, 43px);
+line-height: 1.2;
+}
+
+main > .intro-section p {
+max-width: 760px;
+margin: 0 auto;
+color: var(--text-muted);
+font-size: 17px;
+line-height: 1.9;
+}
+
+/* =====================================================
+SECTION HEADINGS
+===================================================== */
+
+.modern-services .section-heading,
+.modern-gallery .section-heading {
+display: flex;
+align-items: flex-end;
+justify-content: space-between;
+gap: 25px;
+margin-bottom: 35px;
+}
+
+.modern-services .section-heading h2,
+.modern-gallery .section-heading h2 {
+margin: 0;
+color: var(--navy);
+text-align: left;
+font-size: clamp(28px, 3.5vw, 39px);
+line-height: 1.2;
+}
+
+.modern-services .section-label,
+.modern-gallery .section-label {
+margin-bottom: 10px;
+}
+
+.modern-services .text-link,
+.modern-gallery .text-link {
+display: inline-block;
+flex-shrink: 0;
+color: var(--navy);
+font-size: 14px;
+font-weight: 800;
+text-decoration: none;
+transition: color 0.25s ease;
+}
+
+.modern-services .text-link:hover,
+.modern-gallery .text-link:hover {
+color: var(--orange-dark);
+}
+
+/* =====================================================
+MODERN SERVICES
+===================================================== */
+
+main > .modern-services {
+background: var(--light-bg);
+}
+
+.modern-services .modern-service-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 22px;
+}
+
+.modern-services .modern-service-card {
+position: relative;
+min-width: 0;
+padding: 30px 24px;
+border: 1px solid #e4e9f0;
+border-radius: 8px;
+background: var(--white);
+box-shadow: 0 5px 20px rgba(20, 40, 63, 0.04);
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.modern-services .modern-service-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 14px 32px rgba(20, 40, 63, 0.12);
+}
+
+.modern-services .service-number {
+position: absolute;
+top: 20px;
+right: 20px;
+color: #c9d2df;
+font-size: 14px;
+font-weight: 800;
+}
+
+.modern-services .service-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 55px;
+height: 55px;
+margin-bottom: 25px;
+border-radius: 8px;
+background: #fff0df;
+color: var(--orange-dark);
+font-size: 30px;
+}
+
+.modern-services .modern-service-card h3 {
+margin: 0 0 13px;
+color: var(--navy);
+font-size: 20px;
+line-height: 1.35;
+}
+
+.modern-services .modern-service-card p {
+margin: 0 0 22px;
+color: var(--text-muted);
+font-size: 14px;
+line-height: 1.8;
+}
+
+.modern-services .card-link {
+display: inline-block;
+color: var(--navy);
+font-size: 14px;
+font-weight: 800;
+text-decoration: none;
+transition: color 0.25s ease;
+}
+
+.modern-services .card-link:hover {
+color: var(--orange-dark);
+}
+
+/* =====================================================
+MODERN GALLERY
+===================================================== */
+
+main > .modern-gallery {
+background: var(--white);
+}
+
+.modern-gallery .modern-gallery-grid {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 25px;
+}
+
+.modern-gallery .modern-gallery-item {
+position: relative;
+display: block;
+min-width: 0;
+height: 330px;
+overflow: hidden;
+border-radius: 8px;
+background: var(--navy);
+text-decoration: none;
+}
+
+.modern-gallery .modern-gallery-item img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.4s ease;
+}
+
+.modern-gallery .modern-gallery-item:hover img {
+transform: scale(1.05);
+}
+
+.modern-gallery .gallery-caption {
+position: absolute;
+right: 0;
+bottom: 0;
+left: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 15px;
+padding: 22px;
+background: linear-gradient(
+transparent,
+rgba(20, 40, 63, 0.95)
+);
+color: var(--white);
+font-size: 16px;
+font-weight: bold;
+}
+
+.modern-gallery .gallery-caption span:last-child {
+color: var(--orange);
+font-size: 22px;
+}
+
+/* =====================================================
+MODERN CALL TO ACTION
+===================================================== */
+
+main > .modern-cta {
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 40px;
+overflow: hidden;
+background: var(--navy);
+}
+
+.modern-cta .cta-content {
+position: relative;
+z-index: 1;
+width: 100%;
+max-width: 680px;
+}
+
+.modern-cta .section-label {
+margin-bottom: 15px;
+}
+
+.modern-cta h2 {
+margin: 0 0 20px;
+color: var(--white);
+text-align: left;
+font-size: clamp(32px, 4vw, 46px);
+line-height: 1.2;
+}
+
+.modern-cta p {
+max-width: 620px;
+margin: 0 0 28px;
+color: #dce4ed;
+font-size: 16px;
+line-height: 1.9;
+}
+
+.modern-cta .cta-button-light {
+background: var(--orange);
+color: var(--navy);
+}
+
+.modern-cta .cta-decoration {
+position: relative;
+width: 230px;
+height: 230px;
+flex-shrink: 0;
+margin-right: 5%;
+border: 2px solid rgba(242, 140, 40, 0.6);
+border-radius: 50%;
+}
+
+.modern-cta .cta-decoration span {
+position: absolute;
+display: block;
+border: 2px solid rgba(242, 140, 40, 0.4);
+border-radius: 50%;
+}
+
+.modern-cta .cta-decoration span:nth-child(1) {
+inset: 20px;
+}
+
+.modern-cta .cta-decoration span:nth-child(2) {
+inset: 40px;
+}
+
+.modern-cta .cta-decoration span:nth-child(3) {
+inset: 60px;
+background: rgba(242, 140, 40, 0.12);
+}
+
+/* =====================================================
+MODERN FOOTER
+===================================================== */
+
+footer.modern-footer {
+margin-top: 0;
+padding: 55px 8% 0;
+background: #0d1b2a;
+color: var(--white);
+text-align: left;
+}
+
+.modern-footer .footer-main {
+max-width: 1400px;
+margin: 0 auto;
+padding-bottom: 40px;
+}
+
+.modern-footer .footer-brand {
+display: inline-flex;
+flex-direction: column;
+margin-bottom: 20px;
+text-decoration: none;
+line-height: 1.1;
+}
+
+.modern-footer .footer-main > p {
+max-width: 500px;
+margin: 0 0 20px;
+color: #c7d1dc;
+font-size: 15px;
+line-height: 1.8;
+}
+
+.modern-footer .footer-contact {
+display: inline-block;
+color: var(--orange);
+font-size: 14px;
+font-weight: bold;
+text-decoration: none;
+}
+
+.modern-footer .footer-contact:hover {
+color: #ffb45e;
+}
+
+.modern-footer .footer-bottom {
+max-width: 1400px;
+margin: 0 auto;
+padding: 22px 0;
+border-top: 1px solid rgba(255, 255, 255, 0.15);
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 20px;
+}
+
+.modern-footer .footer-bottom p {
+margin: 0;
+color: #b8c4d1;
+font-size: 13px;
+line-height: 1.7;
+}
+
+.modern-footer .footer-bottom a {
+color: var(--white);
+font-size: 13px;
+text-decoration: none;
+}
+
+.modern-footer .footer-bottom a:hover {
+color: var(--orange);
+}
+
+/* =====================================================
+ACCESSIBILITY AND TRANSITIONS
+===================================================== */
+
+.modern-nav a:focus-visible,
+.modern-hero a:focus-visible,
+.modern-services a:focus-visible,
+.modern-gallery a:focus-visible,
+.modern-cta a:focus-visible,
+.modern-footer a:focus-visible {
+outline: 3px solid var(--orange);
+outline-offset: 4px;
+}
+
+/* =====================================================
+RESPONSIVE TABLET DESIGN
+===================================================== */
+
+@media (max-width: 1100px) {
+
+```
+.modern-header {
+    padding-right: 4%;
+    padding-left: 4%;
+}
+
+.modern-nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.modern-nav .nav-links {
+    gap: 16px;
+}
+
+.modern-services .modern-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+main > .intro-section,
+main > .modern-services,
+main > .modern-gallery,
+main > .modern-cta {
+    padding-right: 6%;
+    padding-left: 6%;
+}
+```
+
+}
+
+/* =====================================================
+RESPONSIVE MOBILE DESIGN
+===================================================== */
+
+@media (max-width: 700px) {
+
+```
+.modern-header {
+    position: relative;
+    padding: 0 20px;
+}
+
+.modern-nav {
+    min-height: auto;
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.modern-nav .brand {
+    align-items: center;
+}
+
+.modern-nav .nav-links {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px 18px;
+}
+
+.modern-nav .nav-links a {
+    padding: 5px 0;
+    font-size: 13px;
+}
+
+.modern-nav .nav-quote {
+    padding: 11px 18px;
+}
+
+#hero.modern-hero {
+    min-height: 500px;
+    padding: 65px 25px;
+    background-position: center;
+}
+
+.modern-hero h1 {
+    font-size: clamp(36px, 9vw, 48px);
+    letter-spacing: -0.8px;
+}
+
+.modern-hero p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.modern-hero .hero-buttons {
+    align-items: stretch;
+    flex-direction: column;
+    max-width: 320px;
+}
+
+.modern-hero .cta-button,
+.modern-hero .secondary-button {
+    width: 100%;
+    text-align: center;
+}
+
+.modern-hero .hero-note {
+    align-items: flex-start;
+    font-size: 12px;
+}
+
+main > .intro-section,
+main > .modern-services,
+main > .modern-gallery,
+main > .modern-cta {
+    padding: 55px 22px;
+}
+
+.intro-section h2 {
+    font-size: 30px;
+}
+
+main > .intro-section p {
+    font-size: 15px;
+}
+
+.modern-services .section-heading,
+.modern-gallery .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modern-services .modern-service-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.modern-services .modern-service-card {
+    padding: 28px 24px;
+}
+
+.modern-gallery .modern-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.modern-gallery .modern-gallery-item {
+    height: 270px;
+}
+
+main > .modern-cta {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.modern-cta .cta-decoration {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    margin: 10px 0 0;
+}
+
+.modern-cta .cta-decoration span:nth-child(1) {
+    inset: 15px;
+}
+
+.modern-cta .cta-decoration span:nth-child(2) {
+    inset: 30px;
+}
+
+.modern-cta .cta-decoration span:nth-child(3) {
+    inset: 45px;
+}
+
+footer.modern-footer {
+    padding: 40px 22px 0;
+}
+
+.modern-footer .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+}
+```
+
+}
+
+/* =====================================================
+SMALL MOBILE SCREENS
+===================================================== */
+
+@media (max-width: 380px) {
+
+```
+.modern-nav .nav-links {
+    gap: 8px 12px;
+}
+
+.modern-nav .nav-links a {
+    font-size: 12px;
+}
+
+#hero.modern-hero {
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+.modern-hero h1 {
+    font-size: 34px;
+}
+
+.modern-hero .hero-note {
+    font-size: 11px;
+}
+```
+
+}
+
+/* =====================================================
+MODERN SERVICES PAGE
+===================================================== */
+
+.services-hero {
+min-height: 390px;
+display: flex;
+align-items: center;
+padding: 65px 8%;
+background:
+linear-gradient(
+90deg,
+rgba(20, 40, 63, 0.97),
+rgba(20, 40, 63, 0.78)
+),
+url("images/project1.jpg") center/cover no-repeat;
+}
+
+.services-hero-content {
+width: 100%;
+max-width: 850px;
+}
+
+.services-hero h1 {
+margin: 0 0 20px;
+color: #ffffff;
+font-size: clamp(36px, 5vw, 58px);
+line-height: 1.15;
+}
+
+.services-hero h1 span {
+color: #f28c28;
+}
+
+.services-hero p {
+max-width: 680px;
+margin: 0 0 28px;
+color: #e2e8f0;
+font-size: 17px;
+line-height: 1.8;
+}
+
+.services-main-button {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 12px;
+padding: 15px 24px;
+border-radius: 5px;
+background: #f28c28;
+color: #14283f;
+font-weight: 800;
+text-decoration: none;
+transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.services-main-button:hover {
+background: #ffad52;
+transform: translateY(-2px);
+}
+
+main > .services-intro {
+width: 100%;
+max-width: none;
+margin: 0;
+padding: 65px 8% 35px;
+border-radius: 0;
+background: #ffffff;
+box-shadow: none;
+text-align: center;
+}
+
+.services-intro h2 {
+margin: 0 0 18px;
+color: #14283f;
+font-size: clamp(29px, 4vw, 40px);
+}
+
+main > .services-intro p {
+max-width: 750px;
+margin: 0 auto;
+color: #667085;
+font-size: 16px;
+line-height: 1.8;
+}
+
+main > .services-modern-grid {
+width: 100%;
+max-width: none;
+margin: 0;
+padding: 35px 8% 75px;
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 25px;
+border-radius: 0;
+background: #ffffff;
+box-shadow: none;
+}
+
+.services-modern-card {
+min-width: 0;
+padding: 32px;
+border: 1px solid #e1e7ef;
+border-radius: 9px;
+background: #f8fafc;
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.services-modern-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 12px 28px rgba(20, 40, 63, 0.1);
+}
+
+.services-card-top {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 25px;
+}
+
+.services-card-number {
+color: #aab6c5;
+font-size: 14px;
+font-weight: 800;
+letter-spacing: 2px;
+}
+
+.services-card-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 55px;
+height: 55px;
+border-radius: 8px;
+background: #fff0df;
+color: #dc7415;
+font-size: 29px;
+}
+
+.services-modern-card h2 {
+margin: 0 0 15px;
+color: #14283f;
+text-align: left;
+font-size: 25px;
+}
+
+.services-modern-card p {
+margin: 0 0 20px;
+color: #667085;
+font-size: 15px;
+line-height: 1.8;
+}
+
+.services-modern-card ul {
+margin: 0 0 25px;
+padding-left: 20px;
+color: #344054;
+}
+
+.services-modern-card li {
+padding: 5px 0;
+line-height: 1.6;
+}
+
+.services-modern-card li::marker {
+color: #f28c28;
+}
+
+.services-card-link {
+display: inline-flex;
+align-items: center;
+gap: 10px;
+color: #14283f;
+font-size: 14px;
+font-weight: 800;
+text-decoration: none;
+}
+
+.services-card-link:hover {
+color: #dc7415;
+}
+
+main > .services-modern-cta {
+width: 100%;
+max-width: none;
+margin: 0;
+padding: 70px 8%;
+border-radius: 0;
+background: #14283f;
+box-shadow: none;
+}
+
+.services-cta-content {
+max-width: 800px;
+margin: 0 auto;
+text-align: center;
+}
+
+.services-modern-cta h2 {
+margin: 0 0 20px;
+color: #ffffff;
+font-size: clamp(30px, 4vw, 42px);
+line-height: 1.2;
+}
+
+.services-modern-cta p {
+max-width: 680px;
+margin: 0 auto 28px;
+color: #dce4ed;
+font-size: 16px;
+line-height: 1.8;
+}
+
+.services-hero a:focus-visible,
+.services-modern-grid a:focus-visible,
+.services-modern-cta a:focus-visible {
+outline: 3px solid #f28c28;
+outline-offset: 4px;
+}
+
+@media (max-width: 700px) {
+
+```
+.services-hero {
+    min-height: 350px;
+    padding: 55px 22px;
+}
+
+.services-hero h1 {
+    font-size: 36px;
+}
+
+.services-hero p {
+    font-size: 15px;
+}
+
+main > .services-intro {
+    padding: 50px 22px 25px;
+}
+
+main > .services-modern-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 25px 22px 55px;
+}
+
+.services-modern-card {
+    padding: 25px;
+}
+
+.services-modern-card h2 {
+    font-size: 23px;
+}
+
+main > .services-modern-cta {
+    padding: 55px 22px;
+}
+```
+
+}
+
+/* =========================================
+MODERN GALLERY PAGE
+Nwabisa Projects
+========================================= */
+
+.gallery-hero {
+min-height: 350px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 75px 20px;
+text-align: center;
+color: #ffffff;
+background:
+linear-gradient(rgba(20, 40, 63, 0.88), rgba(20, 40, 63, 0.88)),
+url("images/project1.jpg") center/cover no-repeat;
+}
+
+.gallery-hero-content {
+width: 100%;
+max-width: 850px;
+margin: 0 auto;
+}
+
+.gallery-eyebrow,
+.gallery-section-label {
+color: #f28c28;
+font-size: 0.82rem;
+font-weight: 700;
+letter-spacing: 2px;
+margin-bottom: 15px;
+}
+
+.gallery-hero h1 {
+color: #ffffff;
+font-size: clamp(2.2rem, 5vw, 3.5rem);
+line-height: 1.15;
+margin-bottom: 20px;
+}
+
+.gallery-hero-content > p:not(.gallery-eyebrow) {
+max-width: 680px;
+margin: 0 auto 28px;
+color: #f1f4f8;
+font-size: 1.08rem;
+line-height: 1.8;
+}
+
+.gallery-hero-button,
+.gallery-cta-button {
+display: inline-block;
+padding: 14px 27px;
+background: #f28c28;
+color: #14283f;
+font-weight: 700;
+text-decoration: none;
+border-radius: 6px;
+transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.gallery-hero-button:hover,
+.gallery-cta-button:hover {
+background: #ffab50;
+transform: translateY(-2px);
+}
+
+.gallery-hero-button:focus-visible,
+.gallery-cta-button:focus-visible,
+.gallery-modern-card a:focus-visible {
+outline: 3px solid #f28c28;
+outline-offset: 4px;
+}
+
+/* Gallery Introduction */
+
+.gallery-intro {
+max-width: 850px;
+margin: 0 auto;
+padding: 65px 20px 35px;
+text-align: center;
+}
+
+.gallery-intro h2 {
+color: #14283f;
+font-size: clamp(1.8rem, 4vw, 2.5rem);
+margin-bottom: 18px;
+}
+
+.gallery-intro > p:last-child {
+color: #5b6570;
+font-size: 1rem;
+line-height: 1.8;
+}
+
+/* Gallery Photo Grid */
+
+.gallery-modern-grid {
+width: min(1150px, 100%);
+margin: 0 auto;
+padding: 20px 25px 75px;
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 30px;
+}
+
+.gallery-modern-card {
+overflow: hidden;
+background: #ffffff;
+border-radius: 10px;
+box-shadow: 0 5px 22px rgba(20, 40, 63, 0.10);
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery-modern-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 12px 28px rgba(20, 40, 63, 0.16);
+}
+
+.gallery-modern-card > a {
+display: block;
+overflow: hidden;
+background: #eef1f5;
+}
+
+.gallery-modern-card img {
+display: block;
+width: 100%;
+height: 300px;
+object-fit: cover;
+transition: transform 0.35s ease;
+}
+
+.gallery-modern-card:hover img {
+transform: scale(1.04);
+}
+
+.gallery-modern-caption {
+padding: 23px 25px 25px;
+border-top: 3px solid #f28c28;
+}
+
+.gallery-project-number {
+display: inline-block;
+margin-bottom: 9px;
+color: #f28c28;
+font-size: 0.75rem;
+font-weight: 700;
+letter-spacing: 1.5px;
+}
+
+.gallery-modern-caption h3 {
+margin: 0 0 10px;
+color: #14283f;
+font-size: 1.35rem;
+}
+
+.gallery-modern-caption p {
+margin: 0;
+color: #5b6570;
+line-height: 1.7;
+}
+
+/* Gallery Call to Action */
+
+.gallery-modern-cta {
+padding: 75px 20px;
+text-align: center;
+background: #14283f;
+color: #ffffff;
+}
+
+.gallery-cta-content {
+max-width: 760px;
+margin: 0 auto;
+}
+
+.gallery-modern-cta h2 {
+color: #ffffff;
+font-size: clamp(1.8rem, 4vw, 2.5rem);
+margin: 0 0 18px;
+}
+
+.gallery-modern-cta p:not(.gallery-section-label) {
+color: #e0e7ef;
+line-height: 1.8;
+margin: 0 auto 28px;
+max-width: 680px;
+}
+
+/* Gallery Mobile Layout */
+
+@media (max-width: 700px) {
+.gallery-hero {
+min-height: 300px;
+padding: 55px 20px;
+}
+
+```
+.gallery-intro {
+    padding: 45px 20px 25px;
+}
+
+.gallery-modern-grid {
+    grid-template-columns: 1fr;
+    padding: 20px 18px 50px;
+    gap: 24px;
+}
+
+.gallery-modern-card img {
+    height: 260px;
+}
+
+.gallery-modern-caption {
+    padding: 20px;
+}
+
+.gallery-modern-cta {
+    padding: 55px 20px;
+}
+```
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+.gallery-modern-card,
+.gallery-modern-card img,
+.gallery-hero-button,
+.gallery-cta-button {
+transition: none;
+}
+
+```
+.gallery-modern-card:hover,
+.gallery-hero-button:hover,
+.gallery-cta-button:hover {
+    transform: none;
+}
+
+.gallery-modern-card:hover img {
+    transform: none;
+}
+```
+
+}
+
+/* =========================================
+MODERN ABOUT US PAGE
+Nwabisa Projects
+========================================= */
+
+.about-modern-hero {
+min-height: 340px;
+padding: 75px 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: #ffffff;
+background:
+linear-gradient(rgba(20, 40, 63, 0.88), rgba(20, 40, 63, 0.88)),
+url("images/project1.jpg") center/cover no-repeat;
+}
+
+.about-modern-hero-content {
+max-width: 850px;
+margin: 0 auto;
+}
+
+.about-eyebrow,
+.about-section-label {
+color: #f28c28;
+font-size: 0.82rem;
+font-weight: 700;
+letter-spacing: 2px;
+margin-bottom: 15px;
+}
+
+.about-modern-hero h1 {
+color: #ffffff;
+font-size: clamp(2.2rem, 5vw, 3.4rem);
+line-height: 1.15;
+margin: 0 0 20px;
+}
+
+.about-modern-hero-content > p:not(.about-eyebrow) {
+max-width: 700px;
+margin: 0 auto 28px;
+color: #f1f4f8;
+font-size: 1.08rem;
+line-height: 1.8;
+}
+
+.about-hero-button,
+.about-cta-button,
+.about-services-button {
+display: inline-block;
+padding: 14px 26px;
+border-radius: 6px;
+background: #f28c28;
+color: #14283f;
+font-weight: 700;
+text-decoration: none;
+transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.about-hero-button:hover,
+.about-cta-button:hover,
+.about-services-button:hover {
+background: #ffab50;
+transform: translateY(-2px);
+}
+
+/* Who We Are */
+
+.about-modern-intro {
+width: min(1150px, 100%);
+margin: 0 auto;
+padding: 80px 25px;
+display: grid;
+grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+align-items: center;
+gap: 55px;
+}
+
+.about-intro-image {
+overflow: hidden;
+border-radius: 12px;
+background: #eef1f5;
+box-shadow: 0 8px 28px rgba(20, 40, 63, 0.12);
+}
+
+.about-intro-image img {
+display: block;
+width: 100%;
+height: 430px;
+object-fit: cover;
+}
+
+.about-intro-content h2 {
+color: #14283f;
+font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+line-height: 1.25;
+margin: 0 0 22px;
+}
+
+.about-intro-content > p:not(.about-section-label) {
+color: #5b6570;
+line-height: 1.9;
+margin-bottom: 17px;
+}
+
+.about-text-link {
+display: inline-block;
+margin-top: 8px;
+color: #14283f;
+font-weight: 700;
+text-decoration: none;
+border-bottom: 2px solid #f28c28;
+padding-bottom: 5px;
+}
+
+.about-text-link:hover {
+color: #f28c28;
+}
+
+/* Our Values */
+
+.about-modern-values {
+padding: 75px 25px 85px;
+background: #f5f7fa;
+}
+
+.about-values-heading {
+max-width: 760px;
+margin: 0 auto 45px;
+text-align: center;
+}
+
+.about-values-heading h2 {
+color: #14283f;
+font-size: clamp(1.9rem, 4vw, 2.5rem);
+margin: 0 0 16px;
+}
+
+.about-values-heading > p:last-child {
+color: #5b6570;
+line-height: 1.8;
+}
+
+.about-modern-values-grid {
+width: min(1100px, 100%);
+margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 25px;
+}
+
+.about-modern-value-card {
+padding: 32px 27px;
+background: #ffffff;
+border-radius: 10px;
+border-bottom: 4px solid #f28c28;
+box-shadow: 0 5px 20px rgba(20, 40, 63, 0.07);
+}
+
+.about-value-number {
+display: inline-flex;
+width: 48px;
+height: 48px;
+align-items: center;
+justify-content: center;
+margin-bottom: 20px;
+border-radius: 50%;
+background: #14283f;
+color: #ffffff;
+font-weight: 700;
+}
+
+.about-modern-value-card h3 {
+color: #14283f;
+font-size: 1.25rem;
+margin: 0 0 14px;
+}
+
+.about-modern-value-card p {
+color: #5b6570;
+line-height: 1.8;
+margin: 0;
+}
+
+/* Services Summary */
+
+.about-services-summary {
+padding: 75px 25px;
+background: #ffffff;
+}
+
+.about-services-summary-content {
+max-width: 800px;
+margin: 0 auto;
+text-align: center;
+}
+
+.about-services-summary h2 {
+color: #14283f;
+font-size: clamp(1.8rem, 4vw, 2.5rem);
+margin: 0 0 18px;
+}
+
+.about-services-summary-content > p:not(.about-section-label) {
+color: #5b6570;
+line-height: 1.8;
+margin-bottom: 25px;
+}
+
+.about-service-list {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 14px;
+max-width: 600px;
+margin: 0 auto 30px;
+padding: 0;
+list-style: none;
+text-align: left;
+}
+
+.about-service-list li {
+padding: 15px 18px;
+border-left: 4px solid #f28c28;
+border-radius: 4px;
+background: #f5f7fa;
+color: #14283f;
+font-weight: 600;
+}
+
+/* About Call to Action */
+
+.about-modern-cta {
+padding: 75px 20px;
+text-align: center;
+background: #14283f;
+color: #ffffff;
+}
+
+.about-cta-content {
+max-width: 760px;
+margin: 0 auto;
+}
+
+.about-modern-cta h2 {
+color: #ffffff;
+font-size: clamp(1.8rem, 4vw, 2.5rem);
+margin: 0 0 18px;
+}
+
+.about-modern-cta p:not(.about-section-label) {
+color: #e0e7ef;
+line-height: 1.8;
+margin: 0 auto 28px;
+max-width: 680px;
+}
+
+/* Keyboard Accessibility */
+
+.about-hero-button:focus-visible,
+.about-cta-button:focus-visible,
+.about-services-button:focus-visible,
+.about-text-link:focus-visible {
+outline: 3px solid #f28c28;
+outline-offset: 4px;
+}
+
+/* About Page Responsive Layout */
+
+@media (max-width: 800px) {
+.about-modern-intro {
+grid-template-columns: 1fr;
+gap: 35px;
+padding: 55px 22px;
+}
+
+```
+.about-intro-image img {
+    height: 350px;
+}
+
+.about-modern-values-grid {
+    grid-template-columns: 1fr;
+    max-width: 550px;
+}
+
+.about-modern-value-card {
+    padding: 28px 25px;
+}
+```
+
+}
+
+@media (max-width: 500px) {
+.about-modern-hero {
+min-height: 300px;
+padding: 55px 18px;
+}
+
+```
+.about-intro-image img {
+    height: 260px;
+}
+
+.about-modern-values,
+.about-services-summary {
+    padding: 55px 18px;
+}
+
+.about-service-list {
+    grid-template-columns: 1fr;
+}
+
+.about-modern-cta {
+    padding: 55px 18px;
+}
+```
+
+}
+
+/* Reduced Motion Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+.about-hero-button,
+.about-cta-button,
+.about-services-button {
+transition: none;
+}
+
+```
+.about-hero-button:hover,
+.about-cta-button:hover,
+.about-services-button:hover {
+    transform: none;
+}
+```
+
+}
+
+/* =========================================
+MODERN CONTACT PAGE
+Nwabisa Projects
+========================================= */
+
+.contact-modern-hero {
+min-height: 350px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 75px 20px;
+text-align: center;
+color: #ffffff;
+background:
+linear-gradient(rgba(20, 40, 63, 0.88), rgba(20, 40, 63, 0.88)),
+url("images/project1.jpg") center/cover no-repeat;
+}
+
+.contact-hero-content {
+width: 100%;
+max-width: 850px;
+margin: 0 auto;
+}
+
+.contact-eyebrow,
+.contact-section-label {
+color: #f28c28;
+font-size: 0.82rem;
+font-weight: 700;
+letter-spacing: 2px;
+margin-bottom: 15px;
+}
+
+.contact-modern-hero h1 {
+color: #ffffff;
+font-size: clamp(2.1rem, 5vw, 3.4rem);
+line-height: 1.15;
+margin: 0 0 20px;
+}
+
+.contact-hero-content > p:not(.contact-eyebrow) {
+max-width: 700px;
+margin: 0 auto 28px;
+color: #f1f4f8;
+font-size: 1.08rem;
+line-height: 1.8;
+}
+
+.contact-hero-button,
+.contact-whatsapp-button {
+display: inline-block;
+padding: 14px 27px;
+border-radius: 6px;
+background: #f28c28;
+color: #14283f;
+font-weight: 700;
+text-decoration: none;
+transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.contact-hero-button:hover,
+.contact-whatsapp-button:hover {
+background: #ffab50;
+transform: translateY(-2px);
+}
+
+/* Contact Introduction */
+
+.contact-modern-intro {
+max-width: 800px;
+margin: 0 auto;
+padding: 65px 22px 35px;
+text-align: center;
+}
+
+.contact-modern-intro h2 {
+color: #14283f;
+font-size: clamp(1.8rem, 4vw, 2.5rem);
+margin: 0 0 18px;
+}
+
+.contact-modern-intro > p:last-child {
+color: #5b6570;
+line-height: 1.8;
+}
+
+/* Contact Information Cards */
+
+.contact-modern-details {
+width: min(1100px, 100%);
+margin: 0 auto;
+padding: 20px 25px 75px;
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 24px;
+}
+
+.contact-info-card {
+padding: 30px 22px;
+text-align: center;
+background: #ffffff;
+border-radius: 10px;
+border-bottom: 4px solid #f28c28;
+box-shadow: 0 5px 22px rgba(20, 40, 63, 0.09);
+overflow-wrap: anywhere;
+}
+
+.contact-info-icon {
+width: 52px;
+height: 52px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 auto 18px;
+border-radius: 50%;
+background: #14283f;
+color: #f28c28;
+font-size: 1.5rem;
+font-weight: 700;
+}
+
+.contact-info-card h3 {
+color: #14283f;
+font-size: 1.2rem;
+margin: 0 0 12px;
+}
+
+.contact-info-card p {
+color: #5b6570;
+line-height: 1.7;
+margin: 0 0 12px;
+}
+
+.contact-info-card a,
+.contact-location-text {
+color: #14283f;
+font-weight: 700;
+text-decoration: none;
+}
+
+.contact-info-card a:hover {
+color: #f28c28;
+}
+
+/* Quote Form Section */
+
+.contact-modern-form-section {
+padding: 75px 25px 85px;
+background: #f5f7fa;
+scroll-margin-top: 30px;
+}
+
+.contact-form-intro {
+max-width: 760px;
+margin: 0 auto 35px;
+text-align: center;
+}
+
+.contact-form-intro h2 {
+color: #14283f;
+font-size: clamp(1.9rem, 4vw, 2.5rem);
+margin: 0 0 18px;
+}
+
+.contact-form-intro > p:not(.contact-section-label) {
+color: #5b6570;
+line-height: 1.8;
+}
+
+.contact-form-note {
+margin-top: 25px;
+padding: 18px 20px;
+text-align: left;
+border-left: 4px solid #f28c28;
+border-radius: 5px;
+background: #ffffff;
+color: #45515e;
+line-height: 1.7;
+}
+
+/* Form Layout */
+
+.contact-modern-form {
+width: min(800px, 100%);
+margin: 0 auto;
+padding: 35px;
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 23px;
+background: #ffffff;
+border-radius: 12px;
+box-shadow: 0 6px 25px rgba(20, 40, 63, 0.09);
+}
+
+.contact-form-field {
+display: flex;
+flex-direction: column;
+min-width: 0;
+}
+
+.contact-form-full {
+grid-column: 1 / -1;
+}
+
+.contact-modern-form label {
+display: block;
+margin-bottom: 9px;
+color: #14283f;
+font-weight: 700;
+}
+
+.contact-modern-form input,
+.contact-modern-form select,
+.contact-modern-form textarea {
+display: block;
+width: 100%;
+min-width: 0;
+padding: 13px 14px;
+border: 1px solid #cbd3dc;
+border-radius: 6px;
+background: #ffffff;
+color: #14283f;
+font: inherit;
+line-height: 1.5;
+box-sizing: border-box;
+}
+
+.contact-modern-form input,
+.contact-modern-form select {
+min-height: 49px;
+}
+
+.contact-modern-form textarea {
+min-height: 150px;
+resize: vertical;
+}
+
+.contact-modern-form input::placeholder,
+.contact-modern-form textarea::placeholder {
+color: #7b8794;
+}
+
+.contact-modern-form input:focus,
+.contact-modern-form select:focus,
+.contact-modern-form textarea:focus {
+outline: 2px solid #f28c28;
+outline-offset: 2px;
+border-color: #14283f;
+}
+
+.contact-form-submit {
+width: 100%;
+padding: 16px 20px;
+border: none;
+border-radius: 6px;
+background: #14283f;
+color: #ffffff;
+font: inherit;
+font-weight: 700;
+cursor: pointer;
+transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.contact-form-submit:hover {
+background: #203d5d;
+transform: translateY(-2px);
+}
+
+.contact-form-disclaimer {
+margin: 13px 0 0;
+color: #65717e;
+font-size: 0.88rem;
+line-height: 1.7;
+text-align: center;
+}
+
+/* WhatsApp Call to Action */
+
+.contact-modern-cta {
+padding: 75px 20px;
+background: #14283f;
+color: #ffffff;
+text-align: center;
+}
+
+.contact-cta-content {
+max-width: 760px;
+margin: 0 auto;
+}
+
+.contact-modern-cta h2 {
+color: #ffffff;
+font-size: clamp(1.8rem, 4vw, 2.5rem);
+margin: 0 0 18px;
+}
+
+.contact-modern-cta p:not(.contact-section-label) {
+max-width: 680px;
+margin: 0 auto 28px;
+color: #e0e7ef;
+line-height: 1.8;
+}
+
+/* Keyboard Accessibility */
+
+.contact-hero-button:focus-visible,
+.contact-whatsapp-button:focus-visible,
+.contact-form-submit:focus-visible,
+.contact-info-card a:focus-visible {
+outline: 3px solid #f28c28;
+outline-offset: 4px;
+}
+
+/* Contact Page Responsive Layout */
+
+@media (max-width: 800px) {
+.contact-modern-details {
+grid-template-columns: 1fr;
+max-width: 550px;
+}
+
+```
+.contact-modern-form {
+    padding: 28px;
+}
+```
+
+}
+
+@media (max-width: 550px) {
+.contact-modern-hero {
+min-height: 300px;
+padding: 55px 18px;
+}
+
+```
+.contact-modern-intro {
+    padding: 45px 18px 25px;
+}
+
+.contact-modern-details {
+    padding: 20px 18px 50px;
+    gap: 20px;
+}
+
+.contact-modern-form-section {
+    padding: 55px 15px;
+}
+
+.contact-modern-form {
+    grid-template-columns: 1fr;
+    padding: 23px 18px;
+    gap: 20px;
+}
+
+.contact-form-full {
+    grid-column: auto;
+}
+
+.contact-modern-cta {
+    padding: 55px 18px;
+}
+```
+
+}
+
+/* Reduced Motion Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+.contact-hero-button,
+.contact-whatsapp-button,
+.contact-form-submit {
+transition: none;
+}
+
+```
+.contact-hero-button:hover,
+.contact-whatsapp-button:hover,
+.contact-form-submit:hover {
+    transform: none;
+}
+```
+
+}

@@ -1,186 +1,394 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact | Nwabisa Projects</title>
 
-    <meta name="description" content="Contact Nwabisa Projects in Johannesburg for professional painting services and a free quote.">
+<title>Contact Us | Nwabisa Projects</title>
 
-    <link rel="stylesheet" href="style.css">
+<meta name="description" content="Contact Nwabisa Projects in Johannesburg for professional interior painting, exterior painting, roof painting and ceiling cones. Request a painting quote today.">
+
+<meta name="theme-color" content="#14283f">
+
+<link rel="icon" href="images/favicon.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+
+
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
+
+<!-- Modern Navigation -->
+<header class="modern-header">
+
+    <nav class="modern-nav" aria-label="Main navigation">
+
+        <a href="home.html" class="modern-brand">
+            Nwabisa <span>Projects</span>
+        </a>
+
+        <ul class="modern-nav-links">
             <li><a href="home.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+            <li><a href="book.html">My Book</a></li>
+            <li><a href="contact.html" class="modern-nav-cta">Get a Quote</a></li>
         </ul>
+
     </nav>
 
+</header>
 
-    <!-- Page Header -->
-    <header class="page-header">
-        <h1>Contact Nwabisa Projects</h1>
+
+<!-- Contact Hero -->
+<header class="contact-modern-hero">
+
+    <div class="contact-hero-content">
+
+        <p class="contact-eyebrow">WE'RE HERE TO HELP</p>
+
+        <h1>Let's Talk About Your Project</h1>
 
         <p>
-            Get in touch with us for a free painting quote.
+            Planning to refresh your home or business?
+            Get in touch with Nwabisa Projects to discuss
+            your painting requirements and request a quote.
         </p>
-    </header>
+
+        <a href="#quote-form" class="contact-hero-button">
+            Request a Quote
+        </a>
+
+    </div>
+
+</header>
 
 
-    <main>
+<main>
 
-        <!-- Contact Information -->
-        <section class="contact-page">
+    <!-- Contact Introduction -->
+    <section class="contact-modern-intro">
 
-            <h2>Let's Talk About Your Project</h2>
+        <p class="contact-section-label">GET IN TOUCH</p>
+
+        <h2>How Can We Help You?</h2>
+
+        <p>
+            Whether you need interior painting, exterior painting,
+            roof painting or ceiling cones, tell us about your
+            project and we'll be happy to hear from you.
+        </p>
+
+    </section>
+
+
+    <!-- Contact Information Cards -->
+    <section class="contact-modern-details"
+             aria-label="Contact information">
+
+        <article class="contact-info-card">
+
+            <div class="contact-info-icon" aria-hidden="true">
+                @
+            </div>
+
+            <h3>Email Us</h3>
+
+            <p>Send us an email about your project.</p>
+
+            <a href="mailto:Alvindube91@gmail.com">
+                Alvindube91@gmail.com
+            </a>
+
+        </article>
+
+
+        <article class="contact-info-card">
+
+            <div class="contact-info-icon" aria-hidden="true">
+                ☎
+            </div>
+
+            <h3>Call or WhatsApp</h3>
+
+            <p>Contact us to discuss your requirements.</p>
+
+            <a href="https://wa.me/27747128553"
+               target="_blank"
+               rel="noopener noreferrer">
+                +27 74 712 8553
+            </a>
+
+        </article>
+
+
+        <article class="contact-info-card">
+
+            <div class="contact-info-icon" aria-hidden="true">
+                ⌖
+            </div>
+
+            <h3>Our Location</h3>
+
+            <p>Providing painting services in</p>
+
+            <span class="contact-location-text">
+                Johannesburg, South Africa
+            </span>
+
+        </article>
+
+    </section>
+
+
+    <!-- Quote Request Form -->
+    <section class="contact-modern-form-section"
+             id="quote-form">
+
+        <div class="contact-form-intro">
+
+            <p class="contact-section-label">START YOUR PROJECT</p>
+
+            <h2>Request a Painting Quote</h2>
 
             <p>
-                Whether you need interior painting, exterior painting,
-                roof painting or ceiling cones, we'd be happy to hear
-                from you.
+                Complete the form below with a few details about
+                your project. When you submit it, WhatsApp will open
+                with your enquiry ready to send to Nwabisa Projects.
             </p>
 
-            <div class="contact-details">
+            <div class="contact-form-note">
+                <strong>Helpful tip:</strong>
+                Include the area to be painted, the property location
+                and any important details so we can better understand
+                your requirements.
+            </div>
 
-                <p>
-                    <strong>Email:</strong><br>
-                    <a href="mailto:Alvindube91@gmail.com">
-                        Alvindube91@gmail.com
-                    </a>
-                </p>
+        </div>
 
-                <p>
-                    <strong>Phone / WhatsApp:</strong><br>
-                    <a href="https://wa.me/27747128553" target="_blank">
-                        +27 74 712 8553
-                    </a>
-                </p>
 
-                <p>
-                    <strong>Location:</strong><br>
-                    Johannesburg, South Africa
+        <form class="contact-modern-form"
+              id="painting-quote-form">
+
+            <div class="contact-form-field">
+
+                <label for="customer-name">Your Name *</label>
+
+                <input
+                    type="text"
+                    id="customer-name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required>
+
+            </div>
+
+
+            <div class="contact-form-field">
+
+                <label for="customer-service">Service Needed *</label>
+
+                <select
+                    id="customer-service"
+                    name="service"
+                    required>
+
+                    <option value="">Choose a painting service</option>
+                    <option value="Interior Painting">Interior Painting</option>
+                    <option value="Exterior Painting">Exterior Painting</option>
+                    <option value="Roof Painting">Roof Painting</option>
+                    <option value="Ceiling Cones">Ceiling Cones</option>
+                    <option value="Other Painting Work">Other Painting Work</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="contact-form-field">
+
+                <label for="customer-location">
+                    Property Location
+                </label>
+
+                <input
+                    type="text"
+                    id="customer-location"
+                    name="location"
+                    placeholder="e.g. Randburg, Johannesburg"
+                    autocomplete="address-level2">
+
+            </div>
+
+
+            <div class="contact-form-field">
+
+                <label for="customer-contact">
+                    Your Phone Number (Optional)
+                </label>
+
+                <input
+                    type="tel"
+                    id="customer-contact"
+                    name="phone"
+                    placeholder="Enter your contact number"
+                    autocomplete="tel">
+
+            </div>
+
+
+            <div class="contact-form-field contact-form-full">
+
+                <label for="customer-message">
+                    Tell Us About Your Project *
+                </label>
+
+                <textarea
+                    id="customer-message"
+                    name="message"
+                    rows="6"
+                    placeholder="Describe what needs painting, the approximate size of the area and any other important details..."
+                    required></textarea>
+
+            </div>
+
+
+            <div class="contact-form-full">
+
+                <button type="submit"
+                        class="contact-form-submit">
+
+                    Send Enquiry via WhatsApp
+
+                </button>
+
+                <p class="contact-form-disclaimer">
+                    Your enquiry will open in WhatsApp. Review the
+                    message and press Send in WhatsApp to deliver it.
                 </p>
 
             </div>
 
-        </section>
+        </form>
+
+    </section>
 
 
-        <!-- Quote Form -->
-        <section class="quote-section">
+    <!-- WhatsApp Call to Action -->
+    <section class="contact-modern-cta">
 
-            <h2>Request a Free Quote</h2>
+        <div class="contact-cta-content">
 
-            <p>
-                Fill in the form below and your request will be sent
-                directly to us through WhatsApp.
-            </p>
+            <p class="contact-section-label">PREFER A DIRECT CHAT?</p>
 
-            <form onsubmit="sendToWhatsApp(event)">
-
-                <label for="name">Your Name</label>
-
-                <input
-                    type="text"
-                    id="name"
-                    placeholder="Enter your name"
-                    required
-                >
-
-
-                <label for="service">Service Needed</label>
-
-                <input
-                    type="text"
-                    id="service"
-                    placeholder="e.g. Exterior Painting"
-                    required
-                >
-
-
-                <label for="message">Tell Us About Your Project</label>
-
-                <textarea
-                    id="message"
-                    placeholder="Tell us what you need painted..."
-                    required
-                ></textarea>
-
-
-                <input
-                    type="submit"
-                    value="Send Request via WhatsApp"
-                >
-
-            </form>
-
-        </section>
-
-
-        <!-- WhatsApp CTA -->
-        <section class="service-cta">
-
-            <h2>Prefer WhatsApp?</h2>
+            <h2>Contact Us on WhatsApp</h2>
 
             <p>
-                You can contact us directly on WhatsApp.
+                Have a quick question about your painting project?
+                Start a WhatsApp conversation with Nwabisa Projects.
             </p>
 
             <a
                 href="https://wa.me/27747128553"
                 target="_blank"
-                class="cta-button"
-            >
+                rel="noopener noreferrer"
+                class="contact-whatsapp-button">
+
                 Chat on WhatsApp
+
             </a>
 
-        </section>
+        </div>
 
-    </main>
+    </section>
 
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Nwabisa Projects. All rights reserved.</p>
-    </footer>
+</main>
 
 
-    <!-- WhatsApp Script -->
-    <script>
-        function sendToWhatsApp(event) {
+<!-- Footer -->
+<footer class="modern-footer">
+
+    <p>&copy; 2026 Nwabisa Projects. All rights reserved.</p>
+
+</footer>
+
+
+<!-- Floating WhatsApp Button -->
+<a
+    href="https://wa.me/27747128553"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contact Nwabisa Projects on WhatsApp">
+
+    <img src="images/whatsapp-icon.png" alt="">
+
+</a>
+
+
+<!-- WhatsApp Quote Form Script -->
+<script>
+    document
+        .getElementById("painting-quote-form")
+        .addEventListener("submit", function(event) {
 
             event.preventDefault();
 
-            let name = document.getElementById("name").value;
-            let service = document.getElementById("service").value;
-            let message = document.getElementById("message").value;
+            const name = document
+                .getElementById("customer-name")
+                .value.trim();
 
-            let text =
-                "Hello, my name is " + name +
-                ". I need help with: " + service +
-                ". Message: " + message;
+            const service = document
+                .getElementById("customer-service")
+                .value;
 
-            let phone = "27747128553";
+            const location = document
+                .getElementById("customer-location")
+                .value.trim();
 
-            let url =
+            const customerPhone = document
+                .getElementById("customer-contact")
+                .value.trim();
+
+            const message = document
+                .getElementById("customer-message")
+                .value.trim();
+
+            if (!name || !service || !message) {
+                alert("Please complete your name, service needed and project description.");
+                return;
+            }
+
+            const enquiry = [
+                "Hello Nwabisa Projects, I would like to request a painting quote.",
+                "",
+                "Name: " + name,
+                "Service Needed: " + service,
+                "Property Location: " + (location || "Not provided"),
+                "Customer Phone: " + (customerPhone || "Not provided"),
+                "",
+                "Project Details:",
+                message
+            ].join("\n");
+
+            const phone = "27747128553";
+
+            const whatsappURL =
                 "https://wa.me/" +
                 phone +
                 "?text=" +
-                encodeURIComponent(text);
+                encodeURIComponent(enquiry);
 
-            window.open(url, "_blank");
-        }
-    </script>
+            window.open(whatsappURL, "_blank");
+        });
+</script>
+
 
 </body>
 </html>
-```
